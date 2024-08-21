@@ -18,7 +18,7 @@ class Controller extends BaseController
     {
         return response()->json([
             'status' => 'success',
-            'message' => 'Task deleted successfully'
+            'message' => 'Menu deleted successfully'
         ]);
     }
 
