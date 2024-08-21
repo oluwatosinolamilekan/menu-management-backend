@@ -5,7 +5,7 @@
 
 ## Overview
 
-The Menu Management API is a simple RESTful API built with Laravel 10 for managing tasks. This API allows you to create, read, update, and delete tasks. It also includes basic authentication for secure access.
+The Menu Management API is a simple RESTful API built with Laravel 10 for managing menu. This API allows you to create, read, update, and delete menu. It also includes basic authentication for secure access.
 
 
 ## Minimum system requirements
@@ -23,16 +23,16 @@ Below are the steps you need to successfully setup and run the application.
 - Copy `.env.example into .env`
 - Update DB credentials to match with your db
 - Run `php artisan migrate`
-- To run quick database generation for tasks run `php artisan db:seed` (MenuFactory already implemented in the databaseeder);
+- To run quick database generation for menus run `php artisan db:seed` (MenuFactory already implemented in the databaseeder);
 - Run `php artisan serve`
 
 ## Features
 
-- Create, read, update, and delete tasks.
+- Create, read, update, and delete menus.
 
 ### REST API's
 
-Realize classic RESTful API's for tasks management:
+Realize classic RESTful API's for menus management:
 
 *   `GET /api/menus`
 *   `POST /api/menus`
@@ -44,8 +44,8 @@ Realize classic RESTful API's for tasks management:
 
 
 ## List All Menu
-- Endpoint: GET `/api/tasks`
-- Description: Retrieve a list of all tasks.
+- Endpoint: GET `/api/menu`
+- Description: Retrieve a list of all menus.
 - Response:
 
 ```json
@@ -739,9 +739,9 @@ Realize classic RESTful API's for tasks management:
 ```
 
 
-## Create a New Task
-- Endpoint: POST `/api/tasks`
-- Description: Create a new task.
+## Create a New menu
+- Endpoint: POST `/api/menu`
+- Description: Create a new menu.
 - Request Body:
 
 ```json
@@ -769,7 +769,7 @@ Response:
 
 ### View a Specific Menu
 - Endpoint: POST `/api/menus/{id}`
-- Description: Retrieve details of a specific task by task ID.
+- Description: Retrieve details of a specific menu by menu ID.
 - Response:
 
 ```json
@@ -804,9 +804,9 @@ Response:
 
 ```
 
-## Update a task
+## Update a menu
 - Endpoint: PUT `/api/menu/{id}`
-- Description: Update details of a specific menu by task ID.
+- Description: Update details of a specific menu by menu ID.
 - Request Body:
 ```json
     {
@@ -832,8 +832,8 @@ Response:
 }
 ```
 
-## Delete a task
+## Delete a menu
 - Endpoint: DELETE `/api/menu/{id}`
-- Description: Delete a specific menu by task ID.
+- Description: Delete a specific menu by menu ID.
 - Response: 204 No Content
 
